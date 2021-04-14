@@ -19,7 +19,8 @@ $conn=mysqli_connect($servername,$username,$password,$db);
 if(!conn){
     die("connection failed:" . mysqli_connect_error());
 }
-
+/* terminal: mysql -u root
+create database Dogs;*/
 $sql='create database Dogs';
 
 if ($conn->query($sql)) {
