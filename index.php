@@ -66,11 +66,11 @@ $result =$conn->query($sql);
 if($result->num_rows > 0){
     echo "these are the dogs: \n";
 foreach ($result as $Info){
- echo "ID: " . $Info ['id'];
- echo "Breed: " . $Info ['Breed'];
-echo "LifeSpan:" . $Info ['LifeSpan'];
-echo "Size:" . $Info ['Size'];
-echo "personality:" . $Info['personality'];
+ echo "ID: " . $Info ['id']. "<br>";
+ echo "Breed: " . $Info ['Breed']. "<br>";
+echo "LifeSpan:" . $Info ['LifeSpan']. "<br>";
+echo "Size:" . $Info ['Size']. "<br>";
+echo "personality:" . $Info['personality'] . "<br>";
 }
 }else{
     echo "There are 0 results";
